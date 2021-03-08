@@ -1,0 +1,25 @@
+.a-header {
+  text-align: center;
+  padding: 0px 15px;
+  margin-top: 3rem;
+  margin-bottom: 5.5rem;
+
+  .header {
+    margin-top: 15px;
+  }
+  .sub {
+    margin-top: 15px;
+  }
+
+  @media (min-width: 576px) {
+    margin-bottom: 8rem;
+  }
+  @media (min-width: 1040px) {
+    margin-top: 0px;
+  }
+
+  &--body {
+    @extend .a-header;
+    margin: 4rem 0rem 4.5rem;
+  }
+}

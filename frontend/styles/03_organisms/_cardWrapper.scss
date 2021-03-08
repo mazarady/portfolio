@@ -1,0 +1,24 @@
+.o-cardWrapper {
+  padding: 0px 20px 20px;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  .m-card {
+    scroll-snap-align: center;
+    &:not(:first-of-type) {
+      margin-left: 20px;
+    }
+  }
+  @media (min-width: 1040px) {
+    margin-right: 0px;
+    padding-left: 15px;
+    display: block;
+    overflow-x: initial;
+    .m-card {
+      scroll-snap-align: initial;
+      margin: 0px;
+      margin-bottom: 8rem;
+    }
+  }
+
+}

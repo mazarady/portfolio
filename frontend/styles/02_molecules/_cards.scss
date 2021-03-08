@@ -1,0 +1,89 @@
+.m-card {
+  $self: &;
+
+  @media (min-width: 1040px) {
+    text-align: left;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    grid-column-gap: 5rem;
+  }
+  &__image {
+    img {
+      object-fit: cover;
+      object-position: top;
+      margin: 0 auto;
+      border-radius: 16px;
+    }
+  }
+  &__content {
+    max-width: 440px;
+    margin-top: 20px;
+    padding-right: 10px;
+    @media (min-width: 1040px) {
+      padding: 0px;
+      margin: 0px;
+    }
+    #{$self}__sub {
+      padding-top: 10px;
+    }
+    #{$self}__link {
+      display: block;
+      margin-top: 20px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin-top: 15px;
+      li {
+        cursor: initial;
+        position: relative;
+        &:not(:first-of-type) {
+          margin-left: 10px;
+        }
+        &:after {
+          content: "";
+          background-color: #f44336;
+          background-size: 20px;
+          position: absolute;
+          width: 100%;
+          display: block;
+          bottom: 0;
+          height: 4px;
+          z-index: -1;
+          transition: 200ms height ease;
+          opacity: 0.5;
+        }
+        &:hover {
+          &:after {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  &--right {
+    @extend .m-card;
+    #{$self}__image {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    #{$self}__content {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+}
+
+
+.m-aboutCard {
+ max-width: 500px;
+ margin: 0 auto;
+ text-align: center;
+ &__content {
+   padding: 2.5rem 15px 0px;
+   p {
+     line-height: 20px;
+   }
+ }
+}

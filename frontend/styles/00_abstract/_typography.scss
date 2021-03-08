@@ -1,0 +1,69 @@
+$primary: "proxima-nova";
+$secondary: "garamond-premier-pro";
+
+.header {
+  font-family: $primary;
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.articleHeader {
+  @extend .header;
+  font-size: 25px;
+}
+
+.sub {
+  font-family: $primary;
+  font-size: 24px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.subMisc {
+  font-family: $primary;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 100;
+  color: #f44336;
+  letter-spacing: 1px;
+}
+
+.cardTitle {
+  font-family: $primary;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.cardSub {
+  font-family: $primary;
+  font-size: 16px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.navHeader {
+  font-family: $primary;
+}
+
+.navLink {
+  font-family: $primary;
+  font-weight: 100;
+  color: #f44336;
+}
+.bodyDate {
+  font-family: $secondary;
+  font-size: 16px;
+  font-weight: 600;
+}
+.bodyText {
+  font-family: $secondary;
+  font-size: 20px;
+  line-height: 1;
+}
+
+li {
+  font-family: $primary;
+  color: rgba(0, 0, 0, 0.64);
+}

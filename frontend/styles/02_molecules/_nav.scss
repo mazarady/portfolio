@@ -1,0 +1,21 @@
+.m-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  @media (min-width: 420px) {
+    padding: 20px 40px;
+  }
+  @media (min-width: 1040px) {
+    padding: 40px 60px;
+  }
+  &__right {
+    display: flex;
+    a:last-of-type {
+      margin-left: 20px;
+      @media (min-width: 420px) {
+        margin-left: 25px;
+      }
+    }
+  }
+}
